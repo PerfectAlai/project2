@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Dev Essential</title>
-    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simplelightbox.min.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simplelightbox.min.css"
@@ -16,6 +19,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="./style.css">
+    
   </head>
   <body>
     <nav class="navbar">
@@ -57,11 +62,11 @@
     <section class="section-c">
       <div class="gallery">
         <a href="./img/lap2.jpeg" class="big"><img src="./img/lap2.jpeg" alt="" /></a>
-        <a href="./img/lap1.jpg"><img src="./img/lap1.jpg" alt="" /></a>
-        <a href="./img/lap2.jpeg"><img src="./img/lap2.jpeg" alt="" /></a>
-        <a href="./img/lap1.jpg"><img src="./img/lap1.jpg" alt="" /></a>
-        <a href="./img/lap2.jpeg"><img src="./img/lap2.jpeg" alt="" /></a>
-        <a href="./img/mac_setup_march_2015_1.jpg"><img src="./img/mac_setup_march_2015_1.jpg" alt="" /></a>
+        <a href="./img/lap1.jpg"  class="big"><img src="./img/lap1.jpg" alt="" /></a>
+        <a href="./img/lap2.jpeg" class="big"><img src="./img/lap2.jpeg" alt="" /></a>
+        <a href="./img/lap1.jpg"  class="big"><img src="./img/lap1.jpg" alt="" /></a>
+        <a href="./img/lap2.jpeg" class="big"><img src="./img/lap2.jpeg" alt="" /></a>
+        <a href="./img/mac_setup_march_2015_1.jpg" class="big"><img src="./img/mac_setup_march_2015_1.jpg" alt="" /></a>
       </div>
     </section>
     <footer class="section-footer py-4 bg-primary">
@@ -105,7 +110,7 @@
           <form class="mt-1" name="email-form" method="POST">
             <div class="email-form">
               <span class="form-control-wrap">
-                <input type="email" size="40" placeholder="E-mail" />
+                <input id="email" type="email" size="40" placeholder="E-mail" class="form-control" />
               </span>
               <button type="submit" value="submit" class="form-control submit">
                 <i class="fa-solid fa-chevron-right"></i>
@@ -115,5 +120,14 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      $(function (){
+        const $gallery = $(".gallery a").
+        simpleLightbox();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js"></script>
   </body>
 </html>
